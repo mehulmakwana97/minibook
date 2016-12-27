@@ -1,0 +1,60 @@
+/**
+*
+* settings.scss
+*
+* Contains all settings
+*
+*/
+
+@import 'https://fonts.googleapis.com/css?family=Merriweather:300italic,300,400|Port+Lligat+Slab';
+
+/* Bootstrap */
+$grid-columns: 24;
+
+$basePath: './src/assets';
+
+$black: #000;
+$white: #fff;
+
+$primaryColor: #f7941d;
+$secondaryColor: #37caad;
+
+$imgPath: $basePath + '/img/';
+
+// Our variables
+$base-font-family: 'Merriweather', serif;
+$base-font-size:   16px;
+$base-font-weight: 300;
+$base-line-height: 1.5;
+$base-background-color: #fbf9f0;
+$base-text-color: #434343;
+
+$xsmall-screen: 544px;
+$small-screen: 768px;
+$tablet-screen: 992px;
+$desktop-screen: 1200px;
+$custom-screen-1400: 1400px;
+$custom-screen-1600: 1600px;
+
+$container-max-widths: (
+  sm: 768px,
+  md: 992px,
+  lg: 1200px,
+  xl: 1630px
+);
+
+$media-xsmall: 'xsmall';
+$media-small: 'small';
+$media-tablet: 'tablet';
+$media-desktop: 'desktop';
+$media-custom: 'custom';
+
+$header-background: #a5a5a5;
+$header-tab-color: #aaaaaa;
+
+$header-tab-background: #616161;
+$header-tab-background-end: #434343;
+
+$header-tab-active-background: $white;
+$header-tab-active-color: $white;
+
