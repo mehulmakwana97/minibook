@@ -10,10 +10,10 @@ import { HeroListComponent } from './hero-list.component';
 import { PageNotFoundComponent } from './not-found.component';
 
 const routes: Routes = [
-  { path: 'page-1', component: CrisisListComponent },
-  { path: 'page-2', component: HeroListComponent },
+  { path: 'add-people', component: CrisisListComponent },
+  { path: 'add-company', component: HeroListComponent },
 
-  { path: '', redirectTo: '/page-2', pathMatch: 'full' },
+  { path: '', redirectTo: '/add-people', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
 
