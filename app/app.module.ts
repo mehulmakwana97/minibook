@@ -3,14 +3,16 @@ import { APP_BASE_HREF }   from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { MaterialModule } from '@angular/material';
+import 'hammerjs';
 
 import { AppComponent }  from './app.component';
-import { CrisisListComponent } from './crisis-list.component';
+import { AddPeople } from './views/people/AddPeople';
 import { HeroListComponent } from './hero-list.component';
 import { PageNotFoundComponent } from './not-found.component';
 
 const routes: Routes = [
-  { path: 'add-people', component: CrisisListComponent },
+  { path: 'add-people', component: AddPeople },
   { path: 'add-company', component: HeroListComponent },
 
   { path: '', redirectTo: '/add-people', pathMatch: 'full' },
@@ -21,12 +23,13 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(routes, { useHash: true })
+    RouterModule.forRoot(routes, { useHash: true }),
+    MaterialModule.forRoot()
   ],
   declarations: [
     AppComponent,
     HeroListComponent,
-    CrisisListComponent,
+    AddPeople,
     PageNotFoundComponent
   ],
   providers: [
